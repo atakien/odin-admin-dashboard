@@ -16,8 +16,50 @@
     background-color: #1b8fe1;
     color: white;
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 2rem repeat(11, 2rem) 1fr;
+    grid-template-rows: repeat(3, max-content);
+    padding: 1rem 2rem;
+    gap: 3.6rem;
+}
+
+.sidebar-title-icon svg{
+    width: 2.5rem;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+.sidebar a{
+    color: white;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    gap: 0.2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.sidebar-top{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1.2rem;
+}
+
+.sidebar-bottom{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.sidebar a p, h1{
+    align-self: center;
+    justify-self: left;
+}
+
+svg{
+    fill: white;
+    width: 1.2rem;
+    margin: 0;
 }
 
 .header{
