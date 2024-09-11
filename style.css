@@ -178,21 +178,126 @@ input{
 
 .btn1{
     justify-self: end;
+    padding: 10px 42px;
 }
 
 .btn3{
     justify-self: start;
+    padding: 10px 38px;
 }
 
 .main{
     grid-area: 2 / 2 / 3 / 3;
     background-color: rgb(226, 226, 226);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+   
+}
+
+.main-left{
+    display: grid;
+    grid-template-rows: 1fr repeat(3, 4fr);
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.main-left > p{
+    grid-column: span 2;
+    align-self: end;
 }
 
 .card{
     background-color: white;
+    border-radius: 1rem;
+    border-left: 0.5rem solid rgb(240, 191, 13);
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    padding: 1rem;
+}
+
+.card-title-left{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.card-text-bottom{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.card-right-top, .card-right-bottom{
+    background-color: white;
+    border-radius: 1rem;
+    display: grid;
+}
+
+.big-titles{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-right-top{
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card-right-top div{
+    border-bottom: 1px solid gray;
+}
+
+.card-right-bottom{
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.trend{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.trend p{
+    font-size: 0.8rem;
+}
+
+.card-right-bottom img{
+    width: 3rem;
+}
+
+.card-icons{
+    justify-self: end;
+}
+
+.card-icons svg{
+    fill: black;
+}
+
+.card-title-top{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.text-right{
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.card-right-container{
+    display: grid;
+    grid-template-rows: 1fr 12fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card-right-container > div{
+    display: grid;
+    grid-template-rows: 5fr 1fr 5fr;
+    gap: 1rem;
 }
 
 .card-right{
-    background-color: white;
+    padding: 1rem;
+}
+
+.card-right-container .big-titles{
+    align-self: end;
 }
